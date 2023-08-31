@@ -1,1 +1,1 @@
-# TicTacToe_GUI
+# Tic Tac Toe
