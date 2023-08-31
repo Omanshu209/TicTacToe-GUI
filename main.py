@@ -25,9 +25,11 @@ class MainApp(MDApp):
 			
 		if self.Turn == 'X' and self.nextP == True:
 			self.Turn = 'O'
+			self.theme_cls.primary_palette = 'DeepPurple'
 			
 		elif self.Turn == 'O' and self.nextP == True:
 			self.Turn = 'X'
+			self.theme_cls.primary_palette = 'DeepOrange'
 			
 	def checkResult(self):
 		winCases = [[1,2,3],[1,7,4],[4,6,5],[7,8,9],[2,5,8],[3,9,6],[1,5,9],[3,5,7]]
