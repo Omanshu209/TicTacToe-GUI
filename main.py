@@ -42,7 +42,8 @@ class MainApp(MDApp):
 				popup.open()
 				self.clearWindow()
 				
-			elif self.root.ids.b1.text in ['X','O'] and self.root.ids.b2.text in ['X','O'] and self.root.ids.b3.text in ['X','O'] and self.root.ids.b4.text in ['X','O'] and self.root.ids.b5.text in ['X','O'] and self.root.ids.b6.text in ['X','O'] and self.root.ids.b7.text in ['X','O'] and self.root.ids.b8.text in ['X','O'] and self.root.ids.b9.text in ['X','O']:
+		else:
+			if self.root.ids.b1.text in ['X','O'] and self.root.ids.b2.text in ['X','O'] and self.root.ids.b3.text in ['X','O'] and self.root.ids.b4.text in ['X','O'] and self.root.ids.b5.text in ['X','O'] and self.root.ids.b6.text in ['X','O'] and self.root.ids.b7.text in ['X','O'] and self.root.ids.b8.text in ['X','O'] and self.root.ids.b9.text in ['X','O']:
 				popup = ResultPopup()
 				popup.ids.result.text = "Draw !"
 				popup.open()
